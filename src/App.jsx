@@ -36,7 +36,7 @@ function App() {
 					title="Sobre Mí"
 					content={
 						<>
-							<ul>
+							<ul style={{listStyle: "none"}}>
 								<li>
 									Soy un desarrollador backend especializado en blockchain y
 									DeFi, con experiencia en la implementación de soluciones para
