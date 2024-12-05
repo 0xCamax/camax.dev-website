@@ -120,9 +120,6 @@ body.dark-mode {
   transition: color 0.3s ease; /* Transición para los enlaces */
 }
 
-.dark-mode li {
-  list-style-type: circle;
-}
 
 .dark-mode h1,
 .dark-mode h2,
