@@ -42,19 +42,17 @@ main {
   grid-gap: 30px;
   width: 100%;
   margin-top: 30px;
-  padding: 0 20px;
+  padding: 0 15px;
   justify-items: center; 
 }
 
 /* Estilos para las secciones */
 section {
   background-color: #ffffff;
-  border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%; /* Para que las secciones ocupen todo el espacio */
-  max-width: 500px; /* Limitar el tamaño de las secciones */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Para que las secciones ocupen todo el espacio */
 }
 
 /* Fondo y estilo para el título */
@@ -98,13 +96,58 @@ section:nth-child(odd) {
   background-color: #f9f9f9; /* Fondo gris claro para secciones impares */
 }
 
-section:nth-child(even) {
-  background-color: #ffffff; /* Fondo blanco para secciones pares */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para fondo y texto */
 }
 
-/* Estilo para la sección de contacto */
-.contact-section {
-  grid-column: span 2;  /* Esto hace que la sección ocupe ambas columnas del grid */
+.dark-mode footer,
+.dark-mode section {
+  background-color: #333333;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para fondo y texto */
+}
+
+.dark-mode ul {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.dark-mode a {
+  color: #1e90ff;
+  transition: color 0.3s ease; /* Transición para los enlaces */
+}
+
+.dark-mode li {
+  list-style-type: circle;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5 {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+/* Estilo para el botón de alternancia */
+.theme-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transición para el color y transformación del botón */
+}
+
+.theme-toggle-btn:focus {
+  outline: none;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s, transform 0.3s ease; /* Transición general */
 }
 
 /* Media Queries para pantallas pequeñas (móviles) */

@@ -1,11 +1,34 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Section from "./components/Section";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 function App() {
+	const [darkMode, setDarkMode] = useState(false);
+
+	// Cambiar la clase del body cuando el estado darkMode cambie
+	useEffect(() => {
+		if (darkMode) {
+			document.body.classList.add("dark-mode");
+		} else {
+			document.body.classList.remove("dark-mode");
+		}
+	}, [darkMode]);
 	return (
 		<div className="App">
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          aria-label="Toggle Dark Mode"
+          className="theme-toggle-btn"
+        >
+          {darkMode ? (
+            <FaMoon size={24} color="white" /> // Icono de luna cuando está en modo oscuro
+          ) : (
+            <FaSun size={24} color="black" /> // Icono de sol cuando está en modo claro
+          )}
+        </button>
 			<main>
 				<Header />
 				{/* Sección "Sobre Mí" */}
@@ -39,9 +62,11 @@ function App() {
 					title="Experiencia"
 					content={
 						<>
-							<ul>
+							<h4>
+								<strong>Desarrollador Independiente</strong> (2020 - Actual)
+							</h4>
+							<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
 								<li>
-									<strong>Desarrollador Independiente</strong> (2020 - Actual)
 									<ul>
 										<li>
 											Diseño y optimización de contratos inteligentes en
@@ -166,7 +191,7 @@ function App() {
 					title="Contacto"
 					content={
 						<>
-							<ul>
+							<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
 								<li>Email: alan@camax.dev</li>
 								<li>
 									GitHub: <br />
