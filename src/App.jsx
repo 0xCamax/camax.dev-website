@@ -7,7 +7,7 @@ function App() {
 	return (
 		<div className="App">
 			<main>
-			<Header />
+				<Header />
 				{/* Sección "Sobre Mí" */}
 				<Section
 					title="Sobre Mí"
@@ -16,8 +16,8 @@ function App() {
 							<ul>
 								<li>
 									Soy un desarrollador backend especializado en blockchain y
-									DeFi, con experiencia en la implementación de soluciones
-									para la optimización de operacion y rendimientos.
+									DeFi, con experiencia en la implementación de soluciones para
+									la optimización de operaciones y rendimientos.
 								</li>
 								<li>
 									Desde 2020, trabajo de manera independiente optimizando
@@ -25,9 +25,9 @@ function App() {
 									y analizando tendencias del sector.
 								</li>
 								<li>
-									Mi enfoque combina ciberseguridad, criptografía, analisis de riesgos y análisis de
-									datos para innovar en el ámbito de las aplicaciones
-									financieras descentralizadas.
+									Mi enfoque combina la programación, analisis de riesgos y
+									análisis de datos para innovar en el ámbito de las
+									aplicaciones financieras descentralizadas.
 								</li>
 							</ul>
 						</>
@@ -74,21 +74,41 @@ function App() {
 							<ul>
 								<li>Solidity, Node.js, Go, Rust, MongoDB.</li>
 								<li>
-									Experiencia con herramientas como <strong>TheGraph</strong>{" "}
-									para:
-									<ul style={{listStyle: "circle", paddingLeft: 20}}>
+									Experiencia con herramientas como:
+									<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
 										<li>
-											Extracción de datos de blockchain para análisis de
-											tendencias.
+											<strong>TheGraph</strong> para:
+											<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
+												<li>
+													Extracción de datos de blockchain para análisis de
+													tendencias.
+												</li>
+												<li>
+													Investigación y análisis de rendimiento de
+													aplicaciones DeFi.
+												</li>
+												<li>
+													Optimización de aplicaciones descentralizadas mediante
+													análisis de datos.
+												</li>
+											</ul>
 										</li>
 										<li>
-											Investigación y análisis de rendimiento de aplicaciones
-											DeFi.
+											<strong>ethers.js</strong>, <strong>web3.js</strong> y  <strong>viem</strong> para
+											integración con blockchain y contratos inteligentes.
 										</li>
 										<li>
-											Optimización de aplicaciones descentralizadas mediante
-											análisis de datos.
+											<strong>Substreams</strong> de TheGraph para procesar
+											grandes volúmenes de datos de blockchain de manera
+											eficiente.
 										</li>
+                    <li>
+                      <strong>Criptografía</strong>: Implementación de RSA en blockchain.
+                    </li>
+                    <li>
+                      Desarrollo e integración de protocolos DeFi (<strong>Uniswap</strong>, <strong>Aave</strong>,
+                      etc.) y estrategias de <strong>yeild farming</strong>.
+                    </li>
 									</ul>
 								</li>
 							</ul>
@@ -100,7 +120,7 @@ function App() {
 				<Section
 					title="Certificaciones"
 					content={
-						<ul style={{listStyle: "circle", paddingLeft: 20}}>
+						<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
 							<li>FrontEnd (ReactJS) – Coderhouse</li>
 							<li>BackEnd (MERN) – Coderhouse</li>
 							<li>Fullstack Developer – Coderhouse</li>
@@ -110,19 +130,29 @@ function App() {
 
 				{/* Sección "Educación" */}
 				<Section
-					title="Educación"
-					content="Curso la Licenciatura en Ingeniería en Sistemas Computacionales, TecNM"
+					title="Formación"
+					content={
+						<>
+							<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
+								<li>
+									Curso la licenciatura en Ingeniería en Sistemas
+									Computacionales, TecNM
+								</li>
+								<li>Ingles Fluido</li>
+							</ul>
+						</>
+					}
 				/>
 
 				{/* Sección "Intereses" */}
 				<Section
 					title="Intereses"
 					content={
-						<ul style={{listStyle: "circle", paddingLeft: 20}}>
+						<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
 							<li>Ciberseguridad aplicada a blockchain.</li>
 							<li>DeFi</li>
 							<li>Criptografía</li>
-              <li>Deportes: futbol, padel</li>
+							<li>Deportes: futbol, padel</li>
 						</ul>
 					}
 				/>
