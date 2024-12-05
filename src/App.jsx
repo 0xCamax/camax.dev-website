@@ -72,10 +72,15 @@ function App() {
 					content={
 						<>
 							<ul>
-								<li>Solidity, Node.js, Go, Rust, MongoDB.</li>
+								<li>Solidity, Node.js, Go, Rust, MongoDB, Express.</li>
 								<li>
 									Experiencia con herramientas como:
 									<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
+										<li>
+											Desarrollo e integración de protocolos DeFi (
+											<strong>Uniswap</strong>, <strong>Aave</strong>, etc.) y
+											estrategias de <strong>yeild farming</strong>.
+										</li>
 										<li>
 											<strong>TheGraph</strong> para:
 											<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
@@ -94,21 +99,19 @@ function App() {
 											</ul>
 										</li>
 										<li>
-											<strong>ethers.js</strong>, <strong>web3.js</strong> y  <strong>viem</strong> para
-											integración con blockchain y contratos inteligentes.
+											<strong>ethers.js</strong>, <strong>web3.js</strong> y{" "}
+											<strong>viem</strong> para integración con blockchain y
+											contratos inteligentes.
 										</li>
 										<li>
 											<strong>Substreams</strong> de TheGraph para procesar
 											grandes volúmenes de datos de blockchain de manera
 											eficiente.
 										</li>
-                    <li>
-                      <strong>Criptografía</strong>: Implementación de RSA en blockchain.
-                    </li>
-                    <li>
-                      Desarrollo e integración de protocolos DeFi (<strong>Uniswap</strong>, <strong>Aave</strong>,
-                      etc.) y estrategias de <strong>yeild farming</strong>.
-                    </li>
+										<li>
+											<strong>Criptografía</strong>: Implementación de RSA en
+											blockchain.
+										</li>
 									</ul>
 								</li>
 							</ul>
