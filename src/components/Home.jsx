@@ -41,7 +41,7 @@ function Home() {
 									github.com/0xcamax
 								</a>
 							</li>
-                            <li>Email: alan@camax.dev</li>
+                            <li>Email: camax@mynter.xyz</li>
 						</ul>
 					</div>
 				</div>

@@ -157,7 +157,7 @@ function CV() {
 				content={
 					<>
 						<ul style={{ listStyle: "circle", paddingLeft: 20 }}>
-							<li>Email: alan@camax.dev</li>
+							<li>Email: camax@mynter.xyz</li>
 							<li>
 								GitHub: <br />
 								<a
