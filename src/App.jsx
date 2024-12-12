@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Profile from "./components/Profile";
-import Navbar from "./components/NavBar";
+import Navbar from "./components/Navbar";
 import CV from "./components/CV";
 
 import Section from "./components/Section";
