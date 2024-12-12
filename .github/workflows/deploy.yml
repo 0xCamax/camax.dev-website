@@ -11,6 +11,6 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
+        server: ftp.camax.dev
+        username: gitcv@camax.dev
         password: ${{ secrets.FTP_PASSWORD }}
