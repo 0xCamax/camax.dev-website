@@ -1,4 +1,4 @@
-# **Mi CV Online**
+# **Website personal minimalista**
 
 Una aplicación de una página (one-page) desarrollada con **React** y **Vite**, diseñada para presentar un currículum minimalista y profesional.  
 
