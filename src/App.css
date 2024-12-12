@@ -65,7 +65,7 @@ main {
   grid-gap: 30px;
   width: 100%;
   max-width: 750px;
-  margin-top: 15px;
+  margin-top: 50px;
   padding: 0 15px;
   justify-items: center; 
 }
@@ -80,10 +80,6 @@ main {
 
 .Section-home {
   grid-column: 2 span;
-}
-
-.Section-home h3 {
-  margin-left: 100px;
 }
 
 /* Estilos para las secciones */
@@ -150,7 +146,6 @@ body.dark-mode {
   transition: color 0.3s ease; /* Transición para los enlaces */
 }
 
-
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3,
@@ -172,8 +167,8 @@ body.dark-mode {
   cursor: pointer;
   padding: 10px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 10px;
   transition: color 0.3s ease, transform 0.3s ease; /* Transición para el color y transformación del botón */
 }
 
@@ -183,6 +178,40 @@ body.dark-mode {
 
 body {
   transition: background-color 0.3s, color 0.3s, transform 0.3s ease; /* Transición general */
+}
+
+/* Estilos para el contenido principal con animación */
+.content {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.content.fade {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* Estilo general para el scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar */
+  height: 8px; /* Altura del scrollbar para barras horizontales */
+}
+
+/* Estilo para el track (la parte por donde se mueve el thumb) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el thumb (la parte que se mueve) */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color del thumb */
+  border-radius: 10px; /* Bordes redondeados */
+  transition: background 0.3s; /* Transición para el cambio de color */
+}
+
+/* Estilo cuando el usuario pasa el mouse sobre el thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color más oscuro cuando se pasa el mouse */
 }
 
 /* Media Queries para pantallas pequeñas (móviles) */
@@ -215,37 +244,4 @@ body {
   }
 }
 
-/* Estilos para el contenido principal con animación */
-.content {
-	transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.content.fade {
-	opacity: 0;
-	transform: translateY(-20px);
-}
-
-/* Estilo general para el scrollbar */
-::-webkit-scrollbar {
-  width: 8px; /* Ancho del scrollbar */
-  height: 8px; /* Altura del scrollbar para barras horizontales */
-}
-
-/* Estilo para el track (la parte por donde se mueve el thumb) */
-::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Fondo claro */
-  border-radius: 10px; /* Bordes redondeados */
-}
-
-/* Estilo para el thumb (la parte que se mueve) */
-::-webkit-scrollbar-thumb {
-  background: #888; /* Color del thumb */
-  border-radius: 10px; /* Bordes redondeados */
-  transition: background 0.3s; /* Transición para el cambio de color */
-}
-
-/* Estilo cuando el usuario pasa el mouse sobre el thumb */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Color más oscuro cuando se pasa el mouse */
-}
 

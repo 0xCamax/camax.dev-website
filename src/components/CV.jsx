@@ -102,10 +102,6 @@ function CV() {
 										grandes volúmenes de datos de blockchain de manera
 										eficiente.
 									</li>
-									<li>
-										<strong>Criptografía</strong>: Implementación de RSA en
-										blockchain.
-									</li>
 								</ul>
 							</li>
 						</ul>
