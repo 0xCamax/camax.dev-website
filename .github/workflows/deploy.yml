@@ -1,4 +1,6 @@
-on: push
+on: 
+  push:
+    branches: main
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -21,6 +23,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.camax.dev
-        username: gitcv@camax.dev
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        dangerous-clean-slate: true
+        local-dir: ./build/
+        
