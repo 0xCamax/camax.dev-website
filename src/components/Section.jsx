@@ -1,9 +1,9 @@
 import React from "react";
 
 
-function Section({ title, content }) {
+function Section({ title, content, name }) {
 	return (
-		<section className="Section">
+		<section className={(name ? `Section${"-" + name}`: "Section")}>
 			<h3>{title}</h3>
 			<div>{content}</div>
 		</section>

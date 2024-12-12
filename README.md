@@ -1,6 +1,6 @@
 # **Mi CV Online**
 
-Una aplicación de una página (one-page) desarrollada con **React** y **Vite**, diseñada para presentar un currículum minimalista y profesional, con un enfoque en habilidades y experiencia en el ámbito de blockchain y finanzas descentralizadas (DeFi).  
+Una aplicación de una página (one-page) desarrollada con **React** y **Vite**, diseñada para presentar un currículum minimalista y profesional.  
 
 ---
 
