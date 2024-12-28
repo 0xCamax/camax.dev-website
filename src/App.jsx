@@ -45,7 +45,8 @@ function App() {
 	return (
 		<div className="App">
 			<header className="Header">
-				<Navbar setPage={changePage} />
+				{/* <Navbar setPage={changePage} /> */}
+				<br />
 				<button
 					onClick={() => setDarkMode(!darkMode)}
 					aria-label="Toggle Dark Mode"
